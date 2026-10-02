@@ -1,12 +1,18 @@
 const repeatString = function(word,num) {
-    for(i = 0;i <= num; i++){
-        newword = word + ""
+    let string = "";
+    for(i = 1;i <= num; i++){
+        if(num < 0){
+            return 'ERROR'
+        }
+        else{
+            string += word;
+        }    
     }
-    console.log(word);
+    return string;
 };
 
-repeatString('hey',5);
-
+repeatString('hey',-1);
+//Test 1 passed
 
 // Do not edit below this line
 module.exports = repeatString;
