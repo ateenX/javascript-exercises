@@ -11,8 +11,13 @@ const repeatString = function(word,num) {
     return string;
 };
 
-repeatString('hey',-1);
-//Test 1 passed
+repeatString('hey',-1); //Test 1 passed
+
+repeatString('hello',10); //Test 2 passed
+
+repeatString('hi',1); //Test 3 passed
+
+repeatString('bye',0);
 
 // Do not edit below this line
 module.exports = repeatString;
